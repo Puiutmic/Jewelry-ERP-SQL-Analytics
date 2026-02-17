@@ -8,6 +8,8 @@ Managing a jewelry workshop involves more than just keeping track of inventory. 
 ### The Solution
 I built this schema in Oracle SQL to simulate a real-world production environment. The architecture focuses on three main pillars:
 
+![Database Schema](db_diagram.png)
+
 1. Operational Integrity
 The system uses strict constraints and relational logic to ensure that every gram of gold and every man-hour is accounted for. I implemented triggers to automate the boring parts, such as tracking price history, so that the data remains auditable without manual intervention.
 
