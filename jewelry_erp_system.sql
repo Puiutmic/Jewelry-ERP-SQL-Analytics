@@ -189,7 +189,7 @@ create index idx_comenzi_data on comenzi(data_comanda);
 create index idx_produse_nume on produse(nume_bijuterie);
 
 
---Analiza de profitabilitate
+--profitability analysis
 create or replace view v_profit_bijuterii as
 select 
     p.nume_bijuterie,
@@ -202,7 +202,7 @@ join compozitie_produse cp on p.id_produs = cp.id_produs
 join materii_prime mp on cp.id_materie = mp.id_materie
 group by p.nume_bijuterie, p.pret_vanzare, p.pret_manopera;
 
---actualizare pret
+--price update
 update produse 
 set pret_vanzare = 7500 
 where nume_bijuterie = 'bratara aur personalizata';
@@ -287,9 +287,10 @@ begin
 end;
 /
 
---activare trigger
+--activate trigger
 update produse set pret_vanzare = 3800 where nume_bijuterie = 'bratara aur personalizata';
 commit;
 
 select * from v_profit_bijuterii where profit_net_unitate > 100;
 select * from v_alerta_aprovizionare;
+
