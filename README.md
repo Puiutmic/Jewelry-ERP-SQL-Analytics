@@ -31,6 +31,6 @@ The system is built on Oracle SQL and utilizes:
 - Analytical views for real-time reporting.
 - Triggers for automated data auditing.
 
-I see this project as a bridge between economic theory and software engineering—a way to turn raw SQL into a strategic asset.
+I see this project as a bridge between economic theory and software engineering - a way to turn raw SQL into a strategic asset.
 
 *Note: This project was developed to simulate a real-world tech-driven jewelry workshop workflow.*
